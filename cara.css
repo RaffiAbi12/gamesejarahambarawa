@@ -1,0 +1,136 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+/* Container Styling */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2980b9;
+    text-align: center;
+}
+
+.container ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.container ul li {
+    background: #ecf0f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.container ul li:hover {
+    background: #d0d7de;
+    transform: translateX(10px);
+}
+
+.container ul li strong {
+    color: #e74c3c;
+    margin-left: 5px;
+}
+
+/* CTA Buttons */
+.cta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cta a {
+    flex: 1 1 45%;
+    text-decoration: none;
+    background: #27ae60;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta a:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cta a {
+        flex: 1 1 100%;
+    }
+}

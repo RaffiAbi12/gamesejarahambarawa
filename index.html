@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambarawa Battle Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="status-bar">
+            <div class="hearts" id="hearts">❤️❤️❤️</div>
+            <div class="coin">💰 <span id="coins">0</span></div>
+        </div>
+        <div class="question-box" id="question"></div>
+        <div class="options">
+            <div class="option" onclick="selectAnswer(0)">Option 1</div>
+            <div class="option" onclick="selectAnswer(1)">Option 2</div>
+            <div class="option" onclick="selectAnswer(2)">Option 3</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
